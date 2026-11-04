@@ -14,7 +14,7 @@ AETHER Moments 是一个本地 Agent Skill：宿主 Agent 理解故事、组织�
 
 ### 01 · 《失重的夏天》 · 52 秒 · 产品流程
 
-[![失重的夏天：从一句话，到一段夏天](assets/showcase/product-demo-poster.jpg)](assets/showcase/product-demo.mp4)
+https://github.com/user-attachments/assets/eec50f9e-2a2f-4b33-b642-ff54a168205c
 
 放图 → 分镜 → 成片 → 局部修改前后对比。
 
@@ -22,7 +22,7 @@ AETHER Moments 是一个本地 Agent Skill：宿主 Agent 理解故事、组织�
 
 ### 02 · 《地出》 · 22 秒 · 影像方向试作
 
-[![地出：1968 年 12 月 24 日](assets/showcase/earthrise-poster.jpg)](assets/showcase/earthrise.mp4)
+https://github.com/user-attachments/assets/589b39fe-fe9d-4253-a226-575db4ab6e4e
 
 1968 年 12 月 24 日，阿波罗 8 号，一张来自月球轨道的照片。
 
