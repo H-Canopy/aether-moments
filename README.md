@@ -5,6 +5,7 @@
 [![test](https://github.com/H-Canopy/aether-moments/actions/workflows/test.yml/badge.svg)](https://github.com/H-Canopy/aether-moments/actions/workflows/test.yml)
 [![node](https://img.shields.io/badge/node-%E2%89%A522-3c873a?style=flat-square)](package.json)
 [![status](https://img.shields.io/badge/status-prototype-d97757?style=flat-square)](#验证状态)
+[![license](https://img.shields.io/badge/license-MIT-3c873a?style=flat-square)](LICENSE)
 
 AETHER Moments 是一个本地 Agent Skill：宿主 Agent 理解故事、组织分镜，本仓库负责素材校验、程序化渲染、技术检查和局部修改。交付是一整个可继续编辑的工程，不只是 MP4。
 
@@ -119,9 +120,11 @@ aether-moments/
 
 ## 授权与来源
 
-**原创代码许可证尚未选定。** 在许可证文件出现之前，默认保留所有权利；可见源码不等于已授予再使用许可。请勿将本项目描述为已采用 MIT、Apache-2.0 或其他开源许可证。
+代码采用 **MIT License**，见 [LICENSE](LICENSE)——可自由使用、修改、分发，保留版权声明即可。
 
-本项目为独立实现，参考过 Huashu Motion、Remotion Skills 的公开资料，没有捆绑其源码或运行时。Node.js、FFmpeg/ffprobe 和字体由本机提供，不随仓库分发。示例照片为 NASA / Library of Congress 公有领域素材，署名见对应 `provenance.json`；演示 UI 的素材为 AI 生成、故事虚构。
+**示例媒体不在 MIT 范围内**：`assets/showcase/` 与 `experiments/` 中的照片、音轨仅用于演示，按各自来源授权。NASA / Library of Congress 素材为公有领域，署名见对应 `provenance.json`；演示 UI 的素材为 AI 生成、故事虚构。
+
+本项目为独立实现，参考过 Huashu Motion、Remotion Skills 的公开资料，没有捆绑其源码或运行时。Node.js、FFmpeg/ffprobe 和字体由本机提供，不随仓库分发。
 
 ---
 
@@ -136,4 +139,4 @@ AETHER Moments is a local Agent Skill for personal memory films. The host Agent 
 - Scoped patches with history and per-scene cache reuse.
 - Deterministic FFmpeg rendering with technical QA. No npm runtime deps, no paid model API.
 
-Requires Node.js 22+, FFmpeg/ffprobe and a local CJK font. `npm test` runs 23 checks. The original-code license has not been selected yet; all rights are reserved until a license file is added.
+Requires Node.js 22+, FFmpeg/ffprobe and a local CJK font. `npm test` runs 23 checks. Released under the MIT License; sample media keeps its own terms.
