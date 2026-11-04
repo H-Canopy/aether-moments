@@ -1,0 +1,7 @@
+node_modules/
+demo/
+**/build/
+*.tmp.mp4
+preview.html
+.DS_Store
+Thumbs.db
