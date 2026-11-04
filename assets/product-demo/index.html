@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AETHER Moments · 从一句话，到一段夏天</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<main id="app" data-stage="idle">
+ <header><a class="brand" href="./"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 18 36 5 24 35 18 23Z" fill="currentColor"/><path d="m18 23 18-18" stroke="#f7f4ed" fill="none"/></svg><span>AETHER <em>Moments</em></span></a><span class="edition">A SMALL STORY, BEAUTIFULLY TOLD.</span><button id="replay">重播演示 ↺</button></header>
+ <div class="scene-number"><span id="step">01 / INPUT</span><span>失重的夏天 · 创作示例</span></div>
+ <section class="intro" id="intro"><div class="eyebrow">让画面，接住你的想法。</div><h1>从一句话，<br>到一段<span>夏天。</span></h1><p>放进几张图片。剩下的，和 Agent 一起完成。</p></section>
+ <section class="composer" id="composer" aria-label="创作输入"><div class="photos" id="photos"></div><label class="sr" for="prompt">创作需求</label><textarea id="prompt" placeholder="这些画面里，你想讲一个怎样的故事？" rows="2"></textarea><div class="composer-bottom"><span class="asset-note" id="assetNote">＋ 图片与故事</span><button id="send" aria-label="发送创作需求">↑</button></div></section>
+ <div class="suggestion" id="suggestion">演示主题 <span>一架纸飞机，带我们穿过失重的夏天</span><button id="start">播放创作演示 ↗</button></div>
+ <section class="workspace" id="workspace" aria-label="制作结果"><div class="work-heading"><div><div class="eyebrow">AETHER MOMENTS / SKILL</div><h2 id="workTitle">把夏天，编排成故事。</h2></div><span class="status" id="status">分镜编排</span></div><div class="storyboard" id="storyboard"></div><div class="execution" id="execution"><span class="pulse"></span><span id="executionText">检查素材 · 编排镜头 · 分层渲染</span><span class="execution-meta">本地工程 / FFmpeg</span></div></section>
+ <section class="screen" id="screen"><div class="player-bar"><span>失重的夏天</span><span>00:30 / 1920 × 1080</span></div><video id="film" src="media/original.mp4" muted playsinline controls preload="metadata"></video><div class="film-caption"><span>一场由纸飞机带路的夏日漫游。</span><button id="edit">试一次局部修改 ↗</button></div></section>
+ <section class="revision" id="revision"><div class="eyebrow">再说一句，就改这一处。</div><h2>让城市，浮得轻一点。</h2><div class="request"><span>你</span><p>城市浮动轻一点，其他镜头保持。</p><span class="check">✓</span></div><div class="reply"><span class="mark">A</span><p>已减轻三座城市的浮动和摆动。<br><small>其余五个镜头保持一致 · 本次仅重渲染城市镜头</small></p></div><div class="comparison"><div><span>修改前</span><video id="before" src="media/before-city.mp4" muted loop playsinline preload="metadata"></video></div><div><span>修改后 · 更轻的浮动</span><video id="after" src="media/after-city.mp4" muted loop playsinline preload="metadata"></video></div></div><div class="delivery"><span>视频，也是一个可以继续修改的工程。</span><a href="media/revised.mp4" download>下载成片 ↓</a><a href="editable-project.zip" download>可编辑工程 ↓</a><a href="evidence/acceptance.json">查看验证记录 ↗</a></div></section>
+ <footer><span><b>●</b> 流程演示回放 · AI 生成素材 / 虚构故事</span><span id="footnote">成片与局部修改来自实际 Skill 执行</span></footer>
+</main><script src="app.js"></script></body></html>
