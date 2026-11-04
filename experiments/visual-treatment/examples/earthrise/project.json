@@ -1,0 +1,97 @@
+{
+  "title": "地出 · 公开资料演示",
+  "exampleKind": "public-documentary",
+  "sources": [
+    {
+      "image": "https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/a/as08-14-2383.jpg",
+      "page": "https://science.nasa.gov/resource/apollo-8s-iconic-earthrise/",
+      "credit": "NASA/Bill Anders",
+      "usage": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+    }
+  ],
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "facts": [
+    {
+      "id": "f1",
+      "text": "这张地出照片拍摄于1968年12月24日。"
+    },
+    {
+      "id": "f2",
+      "text": "拍摄者为阿波罗8号宇航员Bill Anders。"
+    },
+    {
+      "id": "f3",
+      "text": "照片里地球出现在月球地平线上方。"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "opening",
+      "layout": "title",
+      "heading": "1968",
+      "kicker": "DECEMBER 24",
+      "caption": "一张来自月球轨道的照片。",
+      "seconds": 4,
+      "motion": "still",
+      "factIds": [
+        "f1"
+      ],
+      "asset": "assets/earthrise.jpg"
+    },
+    {
+      "id": "photograph",
+      "layout": "editorial",
+      "heading": "地出",
+      "kicker": "APOLLO 8 / BILL ANDERS",
+      "caption": "Bill Anders 用相机记录了这一幕。",
+      "seconds": 6,
+      "motion": "push",
+      "factIds": [
+        "f1",
+        "f2"
+      ],
+      "asset": "assets/earthrise.jpg"
+    },
+    {
+      "id": "horizon",
+      "layout": "editorial",
+      "heading": "那颗蓝色星球",
+      "kicker": "EARTH / DETAIL OF ORIGINAL PHOTO",
+      "caption": "月球地平线之上，是地球。",
+      "seconds": 6,
+      "motion": "pull",
+      "factIds": [
+        "f3"
+      ],
+      "asset": "assets/earthrise.jpg",
+      "crop": [
+        0.43,
+        0.38,
+        0.28,
+        0.28
+      ]
+    },
+    {
+      "id": "closing",
+      "layout": "hero",
+      "heading": "地出",
+      "kicker": "PHOTO: NASA / BILL ANDERS",
+      "caption": "1968.12.24 · Bill Anders",
+      "seconds": 6,
+      "motion": "pull",
+      "factIds": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "asset": "assets/earthrise.jpg"
+    }
+  ],
+  "version": 1,
+  "audio": {
+    "asset": "assets/score.wav",
+    "gain": 0.7
+  }
+}

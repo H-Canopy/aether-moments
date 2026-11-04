@@ -1,0 +1,14 @@
+{
+  "name": "aether-moments",
+  "version": "0.6.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "demo": "node src/demo.mjs",
+    "verify": "node src/cli.mjs verify demo/project.json"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

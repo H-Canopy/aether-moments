@@ -1,0 +1,13 @@
+{
+  "name": "aether-moments-visual-treatment",
+  "version": "0.1.0-experiment",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "render": "node src/cli.mjs render examples/earthrise/project.json"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

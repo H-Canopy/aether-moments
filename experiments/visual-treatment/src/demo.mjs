@@ -1,0 +1,10 @@
+import path from 'node:path';
+import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {run,write,render,verify} from './core.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../demo');
+fs.mkdirSync(path.join(root,'assets'),{recursive:true});
+for(let i=1;i<=3;i++) run('ffmpeg',['-y','-v','error','-f','lavfi','-i',`testsrc2=size=640x480:rate=1`,'-frames:v','1',path.join(root,`assets/test${i}.png`)]);
+const facts=[{id:'f1',text:'合成测试素材，不是真实记忆。'},{id:'f2',text:'用于检查字幕和局部修改。'},{id:'f3',text:'当前版本为静音技术原型。'}];
+write(path.join(root,'project.json'),{version:1,title:'合成技术测试',width:720,height:1280,fps:24,facts,scenes:facts.map((f,i)=>({id:`s${i+1}`,asset:`assets/test${i+1}.png`,caption:f.text,seconds:2,factIds:[f.id]}))});
+render(path.join(root,'project.json')); console.log(JSON.stringify(verify(path.join(root,'project.json')),null,2));
